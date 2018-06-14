@@ -24,7 +24,7 @@ class Dashboard extends React.Component {
   initialized = false
 
   init() {
-    if (this.initialized || !this.props.user || !this.props.user.id) {
+    if (this.initialized || !this.props.user || this.props.user.id == null) {
       return
     }
 
